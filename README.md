@@ -11,6 +11,7 @@ which does some pretty awesome visualisation of the sensor data. You can learn m
 * Wio Link or Node devices
 * Wio account
 * API pages for your Wio devices with the device token and API endpoints for the attached bits
+* myjson.com page
 
 ## Configuration
 
@@ -19,8 +20,9 @@ At the shell set the keys for Initial State:
 ```shell
 export IS_BUCKET_KEY=<Your Initial State bucket key>
 export IS_ACCESS_KEY=<Your Initial State access key>
+export MYJSON_KEY=<Your myjson key (the bit at the end of the URL path)>
 ```
 
 Move `wios_example.json` to `wios.json` and edit it to reflect the devices you have attached to your Wios.
 
-Not run `get_wio.py` and it'll start polling the devices and sending data into Initial State.
+Now run `get_wio.py` and it'll start polling the devices and sending data into Initial State.
