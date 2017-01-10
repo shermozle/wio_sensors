@@ -1,0 +1,55 @@
+{
+    "downstairs" : {
+        "token": "xxx",
+        "sleep" : true,
+        "sensors": [
+            {
+                "name": "temperature",
+                "sensor": "/v1/node/GroveTempA0/temp",
+                "signal": "temperature"
+            }
+        ]
+    },
+    "outside" : {
+        "token": "xxx",
+        "sleep" : false,
+        "sensors": [
+            {
+                "name": "temperature",
+                "sensor": "/v1/node/GroveTempHumProD0/temperature",
+                "signal": "celsius_degree"
+            },
+            {
+                "name": "humidity",
+                "sensor": "/v1/node/GroveTempHumProD0/humidity",
+                "signal": "humidity"
+            },
+            {
+                "name": "light",
+                "sensor": "/v1/node/GenericAInA0/analog",
+                "signal": "analog"
+            }
+        ]
+    },
+    "upstairs": {
+        "token": "xxx",
+        "sleep" : true,
+        "sensors": [
+            {
+                "name": "humidity",
+                "sensor": "/v1/node/GroveBME280I2C0/humidity",
+                "signal": "humidity"
+            },
+            {
+                "name": "temperature",
+                "sensor": "/v1/node/GroveBME280I2C0/temperature",
+                "signal": "temperature"
+            },
+            {
+                "name": "pressure",
+                "sensor": "/v1/node/GroveBME280I2C0/pressure",
+                "signal": "pressure"
+            }
+        ]
+    }
+}
